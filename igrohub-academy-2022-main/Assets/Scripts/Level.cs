@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 namespace Game
 {
@@ -13,7 +15,12 @@ public class Level : MonoBehaviour
     [Header("Objects")]
     [SerializeField] private Player _player;
     [SerializeField] private Exit _exitFromLevel;
-    
+
+    [Header("UI")]
+    [SerializeField] private TextMeshProUGUI gameOverText;
+    [SerializeField] private TextMeshProUGUI winText;
+    [SerializeField] private Button restartButton;
+
     private float _timer = 0;
     private bool _gameIsEnded = false;
 
@@ -82,6 +89,7 @@ public class Level : MonoBehaviour
         _gameIsEnded = true;
         _player.Disable();
         Debug.LogError("Victory");
+        winText.gameObject.SetActive(true);
     }
 
     public void Lose()
@@ -89,6 +97,13 @@ public class Level : MonoBehaviour
         _gameIsEnded = true;
         _player.Disable();
         Debug.LogError("Lose");
+        gameOverText.gameObject.SetActive(true);
+        restartButton.gameObject.SetActive(true);
     }
+
+    public void RestartGame()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
 }
 }
