@@ -22,7 +22,7 @@ public class Level : MonoBehaviour
     [SerializeField] private Button restartButton;
 
     private float _timer = 0;
-    private bool _gameIsEnded = false;
+    public bool _gameIsEnded { get; private set; } = false;
 
     private void Awake()
     {
