@@ -219,6 +219,41 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartGame
       objectReference: {fileID: 0}
+    - target: {fileID: 7294618430066236795, guid: e01e907037da660478998f56ea61fab6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294618430066236795, guid: e01e907037da660478998f56ea61fab6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294618430066236795, guid: e01e907037da660478998f56ea61fab6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 971244018}
+    - target: {fileID: 7294618430066236795, guid: e01e907037da660478998f56ea61fab6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294618430066236795, guid: e01e907037da660478998f56ea61fab6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TryLoadNextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294618430066236795, guid: e01e907037da660478998f56ea61fab6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Game.LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294618430066236795, guid: e01e907037da660478998f56ea61fab6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8713996366752764635, guid: e01e907037da660478998f56ea61fab6,
         type: 3}
       propertyPath: m_Name
@@ -331,6 +366,99 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e01e907037da660478998f56ea61fab6, type: 3}
+--- !u!114 &272766856 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7294618430066236795, guid: e01e907037da660478998f56ea61fab6,
+    type: 3}
+  m_PrefabInstance: {fileID: 272766855}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &971244017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7156124993359344650, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156124993359344652, guid: 45ef0193b058aa24093ac5d592edb50d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 45ef0193b058aa24093ac5d592edb50d, type: 3}
+--- !u!114 &971244018 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7156124993359344653, guid: 45ef0193b058aa24093ac5d592edb50d,
+    type: 3}
+  m_PrefabInstance: {fileID: 971244017}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37f7af9e7f6c1b443ae1f743edd48f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1204055760 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8713996366074992482, guid: e01e907037da660478998f56ea61fab6,
@@ -601,9 +729,19 @@ PrefabInstance:
       objectReference: {fileID: 1684353163}
     - target: {fileID: 3690140487587725141, guid: d25c073eaec8bd944a4710e19190f8e8,
         type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 971244018}
+    - target: {fileID: 3690140487587725141, guid: d25c073eaec8bd944a4710e19190f8e8,
+        type: 3}
       propertyPath: restartButton
       value: 
       objectReference: {fileID: 2082614023}
+    - target: {fileID: 3690140487587725141, guid: d25c073eaec8bd944a4710e19190f8e8,
+        type: 3}
+      propertyPath: nextLevelButton
+      value: 
+      objectReference: {fileID: 272766856}
     - target: {fileID: 4727490502750703197, guid: d25c073eaec8bd944a4710e19190f8e8,
         type: 3}
       propertyPath: isActive

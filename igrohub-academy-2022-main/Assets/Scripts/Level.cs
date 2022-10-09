@@ -15,11 +15,13 @@ public class Level : MonoBehaviour
     [Header("Objects")]
     [SerializeField] private Player _player;
     [SerializeField] private Exit _exitFromLevel;
+    [SerializeField] private LevelManager levelManager;
 
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private TextMeshProUGUI winText;
     [SerializeField] private Button restartButton;
+    [SerializeField] private Button nextLevelButton;
 
     private float _timer = 0;
     public bool _gameIsEnded { get; private set; } = false;
@@ -90,6 +92,7 @@ public class Level : MonoBehaviour
         _player.Disable();
         Debug.LogError("Victory");
         winText.gameObject.SetActive(true);
+        nextLevelButton.gameObject.SetActive(true);
     }
 
     public void Lose()
