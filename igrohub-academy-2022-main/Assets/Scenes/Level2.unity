@@ -222,6 +222,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5970793883776184700}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &574093078
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1769216
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4193731
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.6628983
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723938, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194969286394723950, guid: 6f6d223e7a51bc34b901ab68c3500189,
+        type: 3}
+      propertyPath: m_Name
+      value: PowerUp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f6d223e7a51bc34b901ab68c3500189, type: 3}
 --- !u!4 &639927187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3860007630759916617, guid: e7e0d5e1d2a19444fa1932f8891b662d,
@@ -628,10 +697,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e77d7c98b9f4945b050cd77a4b0881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e,
+  projectilePrefab: {fileID: 7878039262588651290, guid: d20d5262ddad68a41811d9a33ebc987e,
     type: 3}
   launchVelocity: 500
   _level: {fileID: 7443611369302104125}
+  defaultPoolCapacity: 2
+  maxSizePoolCapacity: 4
+  usePool: 1
 --- !u!65 &1730808699
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -823,10 +895,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e77d7c98b9f4945b050cd77a4b0881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e,
+  projectilePrefab: {fileID: 7878039262588651290, guid: d20d5262ddad68a41811d9a33ebc987e,
     type: 3}
   launchVelocity: 500
   _level: {fileID: 7443611369302104125}
+  defaultPoolCapacity: 2
+  maxSizePoolCapacity: 4
+  usePool: 1
 --- !u!65 &2036382037
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -902,6 +977,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3860007630499017841, guid: e7e0d5e1d2a19444fa1932f8891b662d,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3860007630499017846, guid: e7e0d5e1d2a19444fa1932f8891b662d,
+        type: 3}
+      propertyPath: defaultMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 46f0ff105a6074d7caced7404b92b53f, type: 2}
+    - target: {fileID: 3860007630499017846, guid: e7e0d5e1d2a19444fa1932f8891b662d,
+        type: 3}
+      propertyPath: powerUpDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3860007630499017846, guid: e7e0d5e1d2a19444fa1932f8891b662d,
+        type: 3}
+      propertyPath: powerUpMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 24a2ef3ea77f095429d71762aabc6032, type: 2}
     - target: {fileID: 3860007630743431487, guid: e7e0d5e1d2a19444fa1932f8891b662d,
         type: 3}
       propertyPath: m_Name
@@ -997,6 +1092,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShootingEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3860007630903915910, guid: e7e0d5e1d2a19444fa1932f8891b662d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3860007631438622561, guid: e7e0d5e1d2a19444fa1932f8891b662d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 3860007631486565081, guid: e7e0d5e1d2a19444fa1932f8891b662d,
         type: 3}
       propertyPath: _observablePoints.Array.data[0]
@@ -1007,6 +1112,11 @@ PrefabInstance:
       propertyPath: _observablePoints.Array.data[1]
       value: 
       objectReference: {fileID: 504475782}
+    - target: {fileID: 3860007631659877372, guid: e7e0d5e1d2a19444fa1932f8891b662d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     - target: {fileID: 3860641231650163620, guid: e7e0d5e1d2a19444fa1932f8891b662d,
         type: 3}
       propertyPath: _patrollingPoints.Array.size
@@ -1030,41 +1140,9 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 5970793883776184700}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7443611369302104131}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb21be5f3a44548e283388677b2dfb76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &7443611369302104131 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3860007630743431487, guid: e7e0d5e1d2a19444fa1932f8891b662d,
-    type: 3}
-  m_PrefabInstance: {fileID: 5970793883776184700}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7443611369302104132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7443611369302104131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1cf305eb5e16844480bba407d906f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObjects:
-  - {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e, type: 3}
-  - {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e, type: 3}
-  - {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e, type: 3}
-  - {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e, type: 3}
-  - {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e, type: 3}
-  - {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e, type: 3}
-  - {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e, type: 3}
-  - {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e, type: 3}
-  - {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e, type: 3}
-  - {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e, type: 3}
-  objectToPool: {fileID: 6593479357756395298, guid: d20d5262ddad68a41811d9a33ebc987e,
-    type: 3}
-  amountToPool: 20
